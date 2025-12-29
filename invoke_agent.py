@@ -14,6 +14,9 @@ try:
         qualifier="DEFAULT"
     )
 
+    # For detail list of all the supported parameters for invoke_agent_runtime, refer to:
+    # https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_InvokeAgentRuntime.html
+
     response_body = response['response'].read()
     response_data = json.loads(response_body)
     print("Agent Response:", response_data)
