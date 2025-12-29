@@ -38,3 +38,26 @@ Json data payload should be as follows.
 4. Verify that the image was published to ECR properly.
 
 > aws ecr describe-images --repository-name my-strands-agent --region us-east-1
+
+### Sharing code into git
+
+.gitignore file should be as follows.
+
+```
+# uv / python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.python-version
+
+# OS
+.DS_Store
+
+```
+
+When you switch between two git accounts, you can set the origin URL as follows 
+
+> git remote set-url origin git@github.com-personal:semika/aws-cognito.git
+
+> git push origin master
