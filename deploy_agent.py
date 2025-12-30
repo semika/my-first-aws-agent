@@ -10,6 +10,10 @@ try:
                 'containerUri': '762002331286.dkr.ecr.us-east-1.amazonaws.com/my-strands-agent:latest'
             }
         },
+        lifecycleConfiguration={
+            'idleRuntimeSessionTimeout': 900,  # 30 minutes
+            'maxLifetime': 28800  # 4 hours
+        },
         networkConfiguration={"networkMode": "PUBLIC"},
         roleArn='arn:aws:iam::762002331286:role/AgentRuntimeRole'
     )
