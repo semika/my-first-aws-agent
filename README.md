@@ -39,6 +39,15 @@ Json data payload should be as follows.
 
 > aws ecr describe-images --repository-name my-strands-agent --region us-east-1
 
+### Creating agent at AWS agent run time
+Run the following python script to create the agent
+
+> uv run deploy_agent.py
+
+If you want to update the existing agent, you run the following command
+
+> uv run update_agent.py
+
 ### Sharing code into git
 
 .gitignore file should be as follows.

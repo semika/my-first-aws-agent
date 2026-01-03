@@ -2,7 +2,7 @@ import boto3
 
 client = boto3.client('bedrock-agentcore-control', region_name='us-east-1')
 
-agent_runtime_id = 'my_agent_runtime'
+agent_runtime_id = 'strands_agent-7ldlgRDDiT'
 
 try:
     response = client.update_agent_runtime(

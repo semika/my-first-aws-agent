@@ -8,7 +8,7 @@ try:
     })
 
     response = agent_core_client.invoke_agent_runtime(
-        agentRuntimeArn='arn:aws:bedrock-agentcore:us-east-1:762002331286:runtime/strands_agent-00R962CU13',
+        agentRuntimeArn='arn:aws:bedrock-agentcore:us-east-1:762002331286:runtime/strands_agent-7ldlgRDDiT',
         runtimeSessionId='dfmeoagmreaklgmrkleafremoigrmtesogmtrskhmtkrlshmt',  # Must be 33+ chars
         payload=payload,
         qualifier="DEFAULT"
